@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Free Wire</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+</head>
+<body>
+        <div class="landing">
+            <nav id="navbar">
+                <a href="index.html"><div class="logo"><img src="./img/TarotReader.png"></div></a>
+                <div class="navbar">
+                    <ul>
+                        <div class="nav-content"><li>Tarot Readers</li></div>
+                        <div class="nav-content"><li>Categories</li></div>
+                        <div class="nav-content menu-space"><li>Handpick Advisor</li></div>
+                    </ul>
+                    <div class="search-box">
+                        <input type="text" class="search-txt" name="" placeholder="Search Advisors">
+                        <a href="#" class="search-btn">
+                        <ion-icon name="search-outline"></ion-icon>
+                        </a>
+                    </div>
+                    <a href="signin.html"><div class="nav-content reg-button"><p>Sign In</p></div></a>
+                    <a href="register.html"><div class="nav-content reg-button"><p>Register</p></div></a>
+                </div>    
+            </nav>
+            <div class="intro-text">
+                <p>Find the best tarot reader<br>for you</p>
+            </div>
+            <div class="category-filters">
+                <form>
+                    <select name="category" id="category" value="category">
+                        <option value="none" selected disabled hidden>CATEGORY</option>
+                        <option value="love">LOVE & RELATIONSHIP</option>
+                        <option value="career">CAREER & WORK</option>
+                        <option value="finance">FINANCE & PROSPERITY</option>
+                        <option value="family">FAMILY & FRIENDS</option>
+                        <option value="divorce">DIVORCE & BREAKUP</option>
+                        <option value="general">GENERAL GUIDANCE</option>
+                        <option value="spiritual">SPIRITUAL GUIDANCE</option>
+                        <option value="past-life">PAST LIFE</option>
+                        <option value="destiny">DESTINY & LIFE PATH</option>
+                    </select>
+                    <select name="price" id="price" value="price">
+                        <option selected="selected" value="popularity">POPULARITY</option>
+                        <option value="exp-high">EXPERIENCE: HIGH TO LOW</option>
+                        <option value="exp-low">EXPERIENCE: LOW TO HIGH</option>
+                        <option value="price-high">PRICE: HIGH TO LOW</option>
+                        <option value="price-low">PRICE: LOW TO HIGH</option>
+                    </select>
+                    <select name="rating" id="rating" value="rating">
+                        <option value="none" selected disabled hidden>Rating</option>
+                        <option selected="selected" value="four">4 & ABOVE</option>
+                        <option value="three">3 & ABOVE</option>
+                        <option value="two">2 & ABOVE</option>
+                        <option value="one">1 & ABOVE</option>
+                    </select>
+                    <input type="submit" value="SEARCH"/>
+                </form>
+            </div>
+        </div>
+        <!-- landing ends -->
+
+        <!-- cards -->
+        <div class="top-cards">
+            <div class="block-cards">
+                <div class="flex-cards">
+                    <div class="astrologer">
+                        <div class="astrolger-details">
+                            <div class="astrologer-img">
+                                <img src="./img/1pic.jpeg" />    
+                            </div>
+                            <div class="astrologer-text">
+                                <a href="profile.html"><div class="astrologer-name">Lara Dutta</div></a>
+                                <div class="astrologer-language">English, Hindi</div>
+                                <div class="astrologer-desc">Your honest and caring friend provides honest and compassionate reading to resolve your life situation. Hello! Hi! blah blah blah blah blah</div>
+                                <div class="astrologer-rate">₹ 10/min</div>
+                            </div>
+                        </div>
+                        <div class="astrologer-features">
+                            <div class="astrologer-rating">
+                                <div class="astrologer-stars">★★★★☆</div>
+                                <div class="astrologer-review">120 reviews</div>
+                            </div>
+                            <div class="contact-option chat"><img src="./img/chat-2.svg" />CHAT</div>
+                            <div class="contact-option"><img src="./img/phone-call.svg" />CALL</div>
+                            <div class="contact-option video-call"><img src="./img/video-camera.svg" />VIDEO CALL</div>
+                        </div>
+                    </div>
+                    <div class="astrologer">
+                        <div class="astrolger-details">
+                            <div class="astrologer-img">
+                                <img src="./img/2pic.jpeg" />
+                            </div>
+                            <div class="astrologer-text">
+                                <a href="profile.html"><div class="astrologer-name">Lara Dutta</div></a>
+                                <div class="astrologer-language">English, Hindi</div>
+                                <div class="astrologer-desc">Your honest and caring friend provides honest and compassionate reading to resolve your life situation.</div>
+                                <div class="astrologer-rate">₹ 10/min</div>
+                            </div>
+                        </div>
+                        <div class="astrologer-features">
+                            <div class="astrologer-rating">
+                                <div class="astrologer-stars">★★★★☆</div>
+                                <div class="astrologer-review">120 reviews</div>
+                            </div>
+                            <div class="contact-option chat"><img src="./img/chat-2.svg" />CHAT</div>
+                            <div class="contact-option"><img src="./img/phone-call.svg" />CALL</div>
+                            <div class="contact-option video-call"><img src="./img/video-camera.svg" />VIDEO CALL</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-cards">
+                    <div class="astrologer">
+                        <div class="astrolger-details">
+                            <div class="astrologer-img">
+                                <img src="./img/1pic.jpeg" />
+                            </div>
+                            <div class="astrologer-text">
+                                <a href="profile.html"><div class="astrologer-name">Lara Dutta</div></a>
+                                <div class="astrologer-language">English, Hindi</div>
+                                <div class="astrologer-desc">Your honest and caring friend provides honest and compassionate reading to resolve your life situation.</div>
+                                <div class="astrologer-rate">₹ 10/min</div>
+                            </div>
+                        </div>
+                        <div class="astrologer-features">
+                            <div class="astrologer-rating">
+                                <div class="astrologer-stars">★★★★★</div>
+                                <div class="astrologer-review">120 reviews</div>
+                            </div>
+                            <div class="contact-option chat"><img src="./img/chat-2.svg" />CHAT</div>
+                            <div class="contact-option"><img src="./img/phone-call.svg" />CALL</div>
+                            <div class="contact-option video-call"><img src="./img/video-camera.svg" />VIDEO CALL</div>
+                        </div>
+                    </div>
+                    <div class="astrologer">
+                        <div class="astrolger-details">
+                            <div class="astrologer-img">
+                                <img src="./img/2pic.jpeg" />
+                            </div>
+                            <div class="astrologer-text">
+                                <a href="profile.html"><div class="astrologer-name">Lara Dutta</div></a>
+                                <div class="astrologer-language">English, Hindi</div>
+                                <div class="astrologer-desc">Your honest and caring friend provides honest and compassionate reading to resolve your life situation.</div>
+                                <div class="astrologer-rate">₹ 10/min</div>
+                            </div>
+                        </div>
+                        <div class="astrologer-features">
+                            <div class="astrologer-rating">
+                                <div class="astrologer-stars">★★★★☆</div>
+                                <div class="astrologer-review">120 reviews</div>
+                            </div>
+                            <div class="contact-option chat"><img src="./img/chat-2.svg" />CHAT</div>
+                            <div class="contact-option"><img src="./img/phone-call.svg" />CALL</div>
+                            <div class="contact-option video-call"><img src="./img/video-camera.svg" />VIDEO CALL</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="listing.html"><div class="custom-btn white"><p>SEE MORE ADVISORS</p></div></a>
+        </div>
+        <div class="tagline">Our Top Priority is Your Security</div>
+        <div class="priority">
+            <div class="psychic-priority priority-features">
+                <img src="./img/psychic.svg"/>
+                <p>Verified Online Psyhics</p>
+            </div>
+            <div class="reading-priority priority-features">
+                <img src="./img/reading.svg"/>
+                <p>Private Reading</p>
+            </div>
+            <div class="security-priority priority-features">
+                <img src="./img/security.svg"/>
+                <p>Secured Checkout</p>
+            </div>
+        </div>
+        <div class="tagline">Explore Categories</div>
+        <div class="astro-category">
+            <div class="block-cards">
+                <div class="flex-cards">
+                    <div class="feature-category">
+                        <div class="category-details">
+                            <div class="category-image">
+                                <img src="./img/034-rose.svg"/>
+                            </div>
+                            <h2>Love & Relationships</h2>
+                            <p>While all psychics can discuss matters of the heart, relationship experts have a special knack for being in tune with the romantic vibrations when providing love readings.</p>
+                            <div class="category-explore">Explore Advisor</div> 
+                        </div>
+                    </div>
+                    <div class="feature-category">
+                        <div class="category-details">
+                            <div class="category-image">
+                                <img src="./img/044-target.svg"/>
+                            </div>
+                            <h2>Career & Work</h2>
+                            <p>While all psychics can discuss matters of the heart, relationship experts have a special knack for being in tune with the romantic vibrations when providing love readings.</p>
+                            <div class="category-explore">Explore Advisor</div> 
+                        </div>
+                    </div>
+                    <div class="feature-category">
+                        <div class="category-details">
+                            <div class="category-image">
+                                <img src="./img/015-gem.svg"/>
+                            </div>
+                            <h2>Finance & Prosperity</h2>
+                            <p>While all psychics can discuss matters of the heart, relationship experts have a special knack for being in tune with the romantic vibrations when providing love readings.</p>
+                            <div class="category-explore">Explore Advisor</div> 
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-cards">
+                    <div class="feature-category">
+                        <div class="category-details">
+                            <div class="category-image">
+                                <img src="./img/007-castle.svg"/>
+                            </div>
+                            <h2>Family & Friends</h2>
+                            <p>While all psychics can discuss matters of the heart, relationship experts have a special knack for being in tune with the romantic vibrations when providing love readings.</p>
+                            <div class="category-explore">Explore Advisor</div> 
+                        </div>
+                    </div>
+                    <div class="feature-category">
+                        <div class="category-details">
+                            <div class="category-image">
+                                <img src="./img/035-sawing.svg"/>
+                            </div>
+                            <h2>Divorce & Breakups</h2>
+                            <p>While all psychics can discuss matters of the heart, relationship experts have a special knack for being in tune with the romantic vibrations when providing love readings.</p>
+                            <div class="category-explore">Explore Advisor</div> 
+                        </div>
+                    </div>
+                    <div class="feature-category">
+                        <div class="category-details">
+                            <div class="category-image">
+                                <img src="./img/010-magic-ball.svg"/>
+                            </div>
+                            <h2>General Guidance</h2>
+                            <p>While all psychics can discuss matters of the heart, relationship experts have a special knack for being in tune with the romantic vibrations when providing love readings.</p>
+                            <div class="category-explore">Explore Advisor</div> 
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-cards">
+                    <div class="feature-category">
+                        <div class="category-details">
+                            <div class="category-image">
+                                <img src="./img/012-dove.svg"/>
+                            </div>
+                            <h2>Spiritual Guidance</h2>
+                            <p>While all psychics can discuss matters of the heart, relationship experts have a special knack for being in tune with the romantic vibrations when providing love readings.</p>
+                            <div class="category-explore">Explore Advisor</div> 
+                        </div>
+                    </div>
+                    <div class="feature-category">
+                        <div class="category-details">
+                            <div class="category-image">
+                                <img src="./img/017-hand-mirror.svg"/>
+                            </div>
+                            <h2>Past Life</h2>
+                            <p>While all psychics can discuss matters of the heart, relationship experts have a special knack for being in tune with the romantic vibrations when providing love readings.</p>
+                            <div class="category-explore">Explore Advisor</div> 
+                        </div>
+                    </div>
+                    <div class="feature-category">
+                        <div class="category-details">
+                            <div class="category-image">
+                                <img src="./img/036-scroll.svg"/>
+                            </div>
+                            <h2>Destiny & Life Path</h2>
+                            <p>While all psychics can discuss matters of the heart, relationship experts have a special knack for being in tune with the romantic vibrations when providing love readings.</p>
+                            <div class="category-explore">Explore Advisor</div> 
+                        </div>
+                    </div>
+                </div>            
+            </div>
+        </div>
+        <div class="tagline less-margin">How it works</div>
+        <div class="priority how-work">
+            <div class="psychic-priority priority-features">
+                <p>Step 1</p>
+                <img src="./img/psychic.svg"/>
+                <p>Select A Psyhics</p>
+            </div>
+            <div class="reading-priority priority-features">
+                <p>Step 2</p>
+                <img src="./img/reading.svg"/>
+                <p>Enter Your Info</p>
+            </div>
+            <div class="security-priority priority-features">
+                <p>Step 3</p>
+                <img src="./img/security.svg"/>
+                <p>Connect With A Psyhics</p>
+            </div>
+        </div>
+
+    <footer>
+        <hr>
+        <div class="head-footer">
+            <div class="blah">
+            <div class="footer-feature footer-section">
+                <h4>FEATURE</h4>
+                <p>Tarot Reader</p>
+                <p>Categories</p>
+                <p>Handpick Advisors</p>
+            </div>
+            <div class="footer-explore footer-section">
+                <h4>Explore</h4>
+                <p>Article</p>
+                <p>About Us</p>
+                <p>Contact Us</p>
+            </div>
+            <div class="footer-joinus footer-section">
+                <h4>Join Now As</h4>
+                <span class="join-btn custom-btn black">TAROT READER</span>
+            </div>
+            </div>
+            <div class="payment-mode footer-section">
+                <h4>Payment we accept</h4>
+                <span class="payment-img">
+                    <img src="./img/payment/Maestro.svg">
+                    <img src="./img/payment/Mastercard.svg">
+                    <img src="./img/payment/Visa.png">
+                    <img src="./img/payment/GPay.png">
+                    <img src="./img/payment/Paytm.png">
+                    <img src="./img/payment/apay.png">
+                    <img src="./img/payment/upi.png">
+                    <img src="./img/payment/amex.png">
+                </span>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            <div class="privacy">
+                <span class="privacy-1 privacy-terms"><p>Privacy Policy</p></span>
+                <span class="privacy-2 privacy-terms"><p>Terms of Use</p></span>
+                <span class="privacy-3 privacy-terms"><p>Do Not Sell My Personal Information</p></span>
+            </div>
+            <div class="copyright"><p>Copyright &#169; 2021 AstroTalk. All Right Reserved.</p></div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script> 
+    <script src="js/main.js"></script>   
+</body>
+
+</html>

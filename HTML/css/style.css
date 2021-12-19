@@ -1,0 +1,1079 @@
+@font-face {
+    font-family: "RomanaBT";
+    src: url('../font/romana_bt/romanan.ttf');
+}
+@font-face {
+    font-family: "roman";
+    src: url('../font/romana_bt/RomanaBTRoman.ttf');
+}
+@font-face {
+    font-family: 'andale-mono';
+    src: url('andale-mono.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'akkurat';
+    src: url('../font/romana_bt/Akkurat.ttf') format('truetype');
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    max-width: 100vw;
+    color: #141414;
+}
+.content{
+    position: relative;
+    top: 0;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+a:visited{
+    text-decoration: none;
+    color: inherit;
+}
+.white{
+    background-color: #fff;
+    color: #141414;
+}
+.white:hover{
+    background-color: #141414;
+    color: #fff;
+}
+.black{
+    background-color: #141414;
+    color: #fff;
+}
+.black:hover{
+    background-color: #fff;
+    color: #141414;
+}
+#navbar.white{
+    background-color: #fff;
+}
+.landing{
+    position: relative;
+    height: 75vh;
+    width: 100vw;
+    background-image: url(../img/8714.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    position: fixed;
+    top: 0;
+    margin: 0;
+    padding-top: 15px;
+    width: 100vw;
+    z-index: 999;
+}
+.white-nav{
+    background-color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.logo{
+    position: absolute;
+    margin: 1em 10vh;
+    padding-top: 10px;
+    height: 25px;
+}
+.navbar{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    color: #141414;
+    margin: 0 10vh;
+}
+nav ul{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav-content{
+    position: relative;
+    height: 25px;
+    width: 150px;
+    padding: 10px;
+}
+.menu-space{
+    width: 175px;;
+}
+.reg-button{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 120px;
+    border: 1px solid #141414;
+    border-radius: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.reg-button:hover{
+    background-color: #141414;
+    color: #fff;
+    transition: 0.2s ease-in-out;
+}
+nav li{
+    position: relative;
+    height: 100%;
+    list-style-type: none;
+    text-align: center;
+    font-family: andale-mono, sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+.search-box {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  padding: 10px;
+  border-radius: 40px;
+  height: 20px;
+  background: #141414;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-box:hover .search-txt {
+  width: 240px;
+  padding: 0 6px;
+}
+
+.search-box:hover .search-btn {
+    width: 30px;
+    height: 30px;
+    color: #141414;
+  background: #fff;
+}
+.search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0;
+  color: #fff;
+  transition: 0.5s;
+  font-size: 1rem;
+  width: 0px;
+}
+.search-btn {
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.reg-button p{
+    height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: andale-mono, sans-serif;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+.intro-text{
+    position: relative;
+    padding: 0 10vw;
+    top: 35vh;
+}
+.intro-text p{
+    font-family: RomanaBT;
+    font-size: 63px;
+    text-align: left;
+}
+.category-filters{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    bottom: 5vh;
+    margin: 0 10vw;
+    width: 80vw;
+    height: 15vh;
+    background:rgba(255,255,255,0.8);
+}
+.category-filters form{
+    font-family: andale-mono, sans-serif;
+    margin: auto;
+}
+.category-filters select{
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url(../img/arrow.png);
+    background-repeat: no-repeat;
+    background-size: 5%;
+    background-position-x: 95%;
+    background-position-y: 50%;
+    width: 1px;
+    height: 1px;
+    cursor: pointer;
+}
+select#category{
+    position: relative;
+    height: 6vh;
+    margin: 7vh 1vw 7vh 0vw;
+    width: 300px;
+    padding: 10px;
+}
+select#price{
+    position: relative;
+    height: 6vh;
+    margin: 7vh 1vw 7vh 0vw;
+    width: 300px;
+    padding: 10px;
+}
+select#rating{
+    position: relative;
+    height: 6vh;
+    margin: 7vh 1vw 7vh 0vw;
+    width: 300px;
+    padding: 10px;
+}
+.category-filters option{
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.category-filters input[type=submit]{
+    background-color: #141414;
+    color: #fff;
+    font-family: andale-mono, sans-serif;
+    font-size: 16px;
+    width: 300px;
+    height: 6vh;
+    text-decoration: none;
+    border: 0;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.category-filters input[type=submit]:hover{
+    background-color: #d9ca9c;
+    transition: 0.2s ease-in-out;
+}
+
+.top-cards{
+    position: relative;
+    padding-top: 50px;
+    width: 100vw;
+    background-color: #fff;
+}
+.block-cards{
+    position: relative;
+    display: block;
+    margin: 0 5vw;
+}
+.flex-cards{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+}
+.astrolger-details{
+    margin: 50px 0;
+    width: 35vw;
+}
+.astrolger-details{
+    position: relative;
+    display: flex;
+    margin-bottom: 0;
+}
+.astrologer-img{
+    position: relative;
+    background-color: #f7f7f7;
+    height: 200px;
+    width: 500px;
+    max-width: 200px;
+}
+.astrologer-img img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+}
+.astrologer-text{
+    font-family: akkurat;
+    font-size: 16px;
+    padding-left: 50px;
+}
+.astrologer-name{
+    font-family: RomanaBT;
+    font-size: 28px;
+    padding-bottom: 5px;
+}
+.astrologer-language{
+    padding-bottom: 15px;
+}
+.astrologer-desc{
+    height: 50px;
+    padding-bottom: 15px;
+    text-overflow: ellipsis;
+}
+.astrologer-rate{
+    font-family: akkurat;
+    font-size: 18px;
+}
+.astrologer-features{
+    position: relative;
+    display: flex;
+    margin: 0 10px 10px 0px;
+}
+.astrologer-rating{
+    display: flex;
+    width: 200px;
+    justify-content: start;
+    font-size: 20px;
+    line-height: 46px;
+}
+.astrologer-stars{
+    margin-left: 10px;
+}
+.astrologer-review{
+    margin-left: 10px;
+    font-size: 16px;
+}
+.contact-option {
+    position: relative;
+    background-color: #141414;
+    font-family: andale-mono,sans-serif;
+    color: #fff;
+    font-size: 16px;
+    margin-left: 20px;
+    line-height: 46px;
+    padding: 0 20px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.contact-option:hover{
+    background-color: #d9ca9c;
+    transition: 0.2s ease-in-out;
+}
+.chat{
+    margin-left: 50px;
+}
+.contact-option img{
+    width: 16px;
+    fill: #fff;
+    padding-right: 5px;
+}
+.video-call img{
+    width: 18px;
+    fill: #fff;
+    padding-right: 5px;
+}
+.custom-btn{
+    position: relative;
+    margin: 50px auto;
+    width: 200px;
+    height: 50px;
+    border: 1px solid #141414;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.custom-btn p{
+    height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: andale-mono, sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+.custom-btn:hover{
+    transition: 0.2s ease-in-out;
+}
+.tagline{
+    position: relative;
+    margin: 75px auto 50px auto;
+    font-family: RomanaBT;
+    font-size: 48px;
+    text-align: center;
+}
+.priority{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    background-image: url(../img/Black_and_White_Watercolor_Background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 25vh;
+    margin-bottom: 50px;
+}
+.priority-features{
+    position: relative;
+    margin: auto;
+}
+.priority-features img{
+    position: relative;
+    display: flex;
+    margin: auto;
+}
+.priority-features p{
+    margin: 25px 0;
+    text-align: center;
+    font-family: akkurat,sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: #fff;
+}
+.astro-category{
+    position: relative;
+    margin: 25px 10vh 0px;
+}
+.category-details{
+    margin-bottom: 100px;
+    padding: 0 50px;
+}
+.category-details h2{
+    font-family: RomanaBT, sans-serif;
+}
+.category-details p{
+    height: 100px;
+    margin-bottom: 25px;
+    font-family: akkurat,sans-serif;
+    font-size: 14px;
+}
+.category-image img{
+    height: 100px;
+    width: 90px;
+}
+.category-explore{
+    border: 1px solid #141414;
+    border-radius: 2px;
+    text-align: center;
+    width: 50%;
+    font-family: andale-mono,sans-serif;
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.category-explore:hover{
+    background-color: #141414;
+    color: #fff;
+    transition: 0.2s ease-in-out;
+}
+.less-margin{
+    margin-top: 0px;
+}
+.how-work{
+    height: 30vh;
+}
+
+
+/*signup*/
+.head-link img{
+    position: relative;
+    display: flex;
+    margin: 45px auto 0;
+    height: 28px;
+}
+.sign-title{
+    position: relative;
+    display: flex;
+    letter-spacing: -1px;
+    margin: 10vh auto 5vh;
+}
+.sign-title p{
+    margin: auto;
+    font-family: RomanaBT;
+    font-size: 60px;
+}
+.sign-in form{
+    position: relative;
+    width: 60vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sign-in form input{
+    width: 60vh;
+    height: 60px;
+    margin: 20px auto;
+    border: 2px solid #141414;
+    font-family: andale-mono,sans-serif;
+    font-size: 17px;
+    padding-left: 20px;
+}
+.valid:valid{
+    border: 2px solid green;
+}
+.sign-in form input::placeholder{
+    font-family: andale-mono,sans-serif;
+    font-size: 18px;
+    opacity: 1;
+    font-weight: 400;
+    color: black;
+}
+.form-misc{
+    position: relative;
+    display: flex;
+}
+.remember-me{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.remember-me input{
+    width: 18px!important;
+    height: 18px!important;
+    margin: 0!important;
+    border: 10px solid #141414!important;
+    cursor: pointer;
+}
+.remember-me label{
+    padding-left: 5px;
+    font-family: akkurat;
+    font-size: 18px;
+}
+.forgot-pass{
+    position: relative;
+    width: 50%;
+    right: 0;
+}
+.forgot-pass p{
+    margin-right: -15px;
+    font-family: akkurat;
+    font-size: 18px;
+    color: #C19200;
+    text-align: right;
+}
+.sign-in input[type=submit]{
+    position: relative;
+    margin-top: 45px;
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    font-family: andale-mono,sans-serif;
+    font-size: 16px;
+    color: #fff;
+    width: 300px;
+    background-color: #141414;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.register-link{
+    position: relative;
+    margin-top: 35px;
+    text-align: center;
+    font-family: akkurat;
+    font-size: 18px;
+}
+.link-text{
+    color: #C19200;
+}
+.agree-terms{
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.agree-terms input{
+    width: 24px!important;
+    height: 24px!important;
+    margin: 0!important;
+    cursor: pointer;
+}
+.agree-terms label{
+    padding-left: 10px;
+    font-family: akkurat;
+    font-size: 18px;
+    font-weight: 500;
+}
+.forgot-desc{
+    position: relative;
+    margin: -20px auto 25px;
+    text-align: center;
+    width: 65vh;
+}
+.forgot-desc p{
+    font-family: akkurat;
+    font-size: 16px;
+}
+.back-sign-in{
+    height: 150px;
+    margin-top: 50px;
+    text-align: center;
+}
+.back-sign-in p{
+    font-family: akkurat;
+    font-size: 18px;
+}
+.pass-constraint{
+    font-family: akkurat;
+    font-size: 18px;
+}
+.phone{
+    position: relative;
+    display: flex;
+}
+select#countrycode{
+    position: relative;
+    width: 30%!important;
+    height: 65px;
+    border: 2px solid #141414;
+    margin: 0vh 1vw 0vh 0vw;
+    width: 300px;
+    padding: 10px;
+}
+.phone input{
+    margin: 0!important;
+}
+.phone-number{
+    position: relative;
+    display: flex;
+    margin: -25px auto 25px;
+    width: 20vw;
+    background-color: #D5D5D5;
+    padding: 10px 5px;
+}
+.phone-number p{
+    margin: auto;
+    font-family: akkurat;
+    font-size: 16px;
+}
+.otp input{
+    display: flex;
+    width: 75%!important;
+    justify-content: center;
+    padding-left: 0!important;
+    text-align: center!important;
+}
+/*listing*/
+.listing{
+    margin: 125px 0;
+}
+.astrologer-filters{
+    margin: 0vh 5vw;
+    padding: 15px 15px 0px;
+    background-color: #FAFAFA;
+    border-bottom: 1px solid #141414;
+    border-top: 1px solid #141414;
+}
+.filter-split-top{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.filter-title{
+    width: 70vw;
+    font-family: RomanaBT;
+    font-size: 32px;
+}
+.reader-count{
+    width: 13vw;
+    margin-right: 2vw;
+    font-family: akkurat;
+    font-size: 18px;
+}
+.filter-click{
+    position: relative;
+    right: 0;
+    width: 13vw;
+    font-family: akkurat;
+    font-size: 18px;
+    cursor: pointer;
+}
+.filter-split-bottom{
+    display: none;
+    margin-top: 10px;
+}
+.filter-split-bottom form{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.filter-split-bottom select{
+    width: 250px!important;
+    height: 6vh;
+    margin: 0!important;
+    text-transform: uppercase;
+    padding: 10px;
+    justify-content: space-between;
+}
+.filter-split-bottom option{
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.filter-split-bottom input[type=submit]{
+    background-color: #141414;
+    color: #fff;
+    font-family: andale-mono, sans-serif;
+    font-size: 16px;
+    width: 300px;
+    height: 6vh;
+    text-decoration: none;
+    border: 0;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.filter-split-bottom input[type=submit]:hover{
+    background-color: #d9ca9c;
+    transition: 0.2s ease-in-out;
+}
+
+/*profile*/
+.profile{
+    position: relative;
+    display: flex;
+    margin: 15vh 10vw;
+}
+.astrologer-profile{
+    width: 50vw;
+    margin-left: 20px;
+    padding-right: 10px;
+}
+.astrologer-book{
+    top: 0;
+    position: sticky;
+    width: 30vw;
+}
+.profile-details{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.profile-picture{
+    position: relative;
+    height: 350px;
+    width: 350px;
+    background-color: #FAFAFA;
+}
+.profile-picture img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+.profile-desc{
+    position: relative;
+    margin-left: 75px;
+}
+.profile-desc span{
+    display: flex;
+}
+.profile-name{
+    font-family: RomanaBT;
+    font-size: 48px;
+    margin: 00px 0px 35px;
+}
+.profile-reviews{
+    position: relative;
+    display: flex;
+    font-family: sans-serif;
+    font-size: 18px;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 35px;
+}
+.profile-reviews p{
+    padding-right: 5px;
+}
+.profile-rating{
+    font-size: 20px;
+}
+.profile-stars{
+    font-size: 24px;
+}
+.profile-total-review{
+    padding-left: 10px;
+    padding-right: 0;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.profile-stats{
+    position: relative;
+    justify-content: space-between;
+    width: 135%;
+    margin-bottom: 25px;
+}
+.stats{
+    display: block!important;
+    font-family: akkurat;
+}
+.stats-title{
+    font-size: 18px;
+    font-weight: 600;
+}
+.stats-desc{
+    font-size: 25px;
+}
+
+.profile-summary h2{
+    font-family: RomanaBT;
+    font-weight: normal;
+    font-size: 30px;
+}
+.profile-summary p{
+    font-family: akkurat;
+    font-size: 20px;
+}
+.skill-wrap{
+    position: relative;
+    margin: 50px 0 25px;
+    display: flex;
+}
+.specialitiy{
+    position: relative;
+    width: 50%;
+}
+.talent-head{
+    font-family: RomanaBT;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+.astrologer-talent ul{
+    padding: 0;
+}
+.astrologer-talent li{
+    list-style: none;
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+}
+.astrologer-talent li img{
+    width: 40px;
+    margin-right: 15px;
+}
+.astrologer-talent li p{
+    font-family: akkurat;
+    font-size: 24px;
+}
+.method{
+    position: relative;
+    width: 50%;
+}
+.astrologer-photos{
+    position: relative;
+    width: 90%;
+    margin: 100px 0 75px;
+}
+.item img{
+    width: 250px;
+    height: 250px;
+}
+.astrologer-video video {
+    width: 90%;
+    border-radius: 18px;
+}
+.rating-review{
+    margin-top: 75px;
+    width: 65%;
+}
+.review-head{
+    position: relative;
+    margin-bottom: 25px;
+    font-family: RomanaBT;
+    font-size: 36px;
+}
+.user-review{
+    position: relative;
+    display: flex;
+    margin: 50px 0;
+    min-width: 65%;
+}
+.user-picture{
+    min-width: 25%;
+}    
+.user-picture img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+.user-rating-info{
+    min-width: 75%;
+}
+.user-name{
+    font-family: akkurat;
+    font-size: 16px;
+    color: #222222;
+}
+.user-comment{
+    font-family: akkurat;
+    margin-top: 5px;
+    font-size: 15px;
+    color: #555555;
+}
+.user-rating{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+.user-star{
+    position: relative;
+    width: 50%;
+    font-size: 26px;
+    text-align: left;
+}
+.rating-date{
+    position: relative;
+    width: 50%;
+    text-align: right;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #222222;
+}
+.book-card{
+    position: sticky;
+    top: 15vh;
+    height: 600px;
+    border: 1px solid #DEDEDE;
+    border-radius: 10px;
+    margin-left: 20px;
+    padding: 25px 50px 25px 25px;
+}
+.book-card span{
+    display: block;
+}
+.book-title{
+    font-family: RomanaBT;
+    font-size: 32px;
+    color: #222222;
+}
+.book-cost{
+    font-family: sans-serif;
+    font-size: 26px;
+    margin: 30px 0 35px;
+}
+.book-features{
+    margin-bottom: 35px;
+}
+.book-features .chat{
+    margin-left: 0;
+}
+.book-availability{
+    display: flex!important;
+    align-items: center;
+}
+.book-availability img{
+    width: 35px;
+    height: 35px;
+}
+.availability-text{
+    font-family: RomanaBT;
+    font-size: 32px;
+    padding-left: 15px;
+}
+.availability-schd{
+    padding-left: 50px;
+}
+.available-date{
+    margin-top: 25px;
+    font-family: akkurat;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/*footer*/
+footer{
+    position: relative;
+    bottom: 0;
+    margin: 0 10vh 50px;
+}
+.content+footer{
+    position: absolute;
+    width: 90vw;
+    bottom: 0;
+}
+.head-footer{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.blah{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.footer-section{
+    margin-left: 15px;
+    margin-right: 50px;
+}
+.footer-joinus {
+    align-items: flex-start;
+}
+.footer-section h4{
+    font-family: RomanaBT;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.footer-section p{
+    font-family: andale-mono,sans-serif;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.join-btn{
+    font-family: andale-mono,sans-serif;
+    font-size: 14px;
+    padding: 7.5px 30px;
+}
+.payment-mode{
+    width: 25%;
+    margin-right: 15px;
+    text-align: center;
+}
+.payment-img{
+    position: relative;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+.payment-img img{
+    width: 40px;
+}
+.footer-bottom{
+    position: relative;
+    display: flex;
+    margin-top: 20px;
+}
+.privacy{
+    width: 50%;
+    display: flex;
+}
+.privacy-terms{
+    padding: 0 15px;
+    border-right: 1px solid #141414;
+}
+.privacy-3{
+    border-right: 0px;
+}
+.privacy-terms p{
+    font-family: andale-mono,sans-serif;
+    font-size: 14px;
+}
+.copyright{
+    width: 50%;
+}
+.copyright p{
+    text-align: right;
+    font-family: andale-mono,sans-serif;
+    font-size: 14px;
+}
